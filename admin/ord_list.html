@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>旅游民宿管理</title>
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/carousel.css" rel="stylesheet">
+  <link href="../css/manager.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--导航栏-->
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">拖动导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">旅游民宿管理</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../zhuhu.html">我是住户</a></li>
+            <li><a href="../fangdong.html">我是房东</a></li>
+            <li class="active"><a href="../manager.html">管理后台</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">我的<span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">我的信息</li>
+                <li><a href="../login.html">登录</a></li>
+                <li><a href="../register.html">注册</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">退出登录</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<!--占位符-->
+<div class="mgr-spacer"></div>
+
+<div class="container marketing">
+  <ul class="nav nav-tabs mgr-botmar-md">
+    <li role="presentation"><a href="usr_index.html">用户管理</a></li>
+    <li role="presentation" class="active"><a href="ord_index.html">订单管理</a></li>
+    <li role="presentation"><a href="site_index.html">网站管理</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation"><a href="usr_create.html">创建用户</a></li>
+        <li role="presentation"><a href="usr_verify.html">实名认证审批</a></li>
+        <li role="presentation"><a href="usr_list.html">用户资料管理</a></li>
+        <li role="separator">
+          <hr>
+        </li>
+        <li role="presentation" class="active"><a href="ord_list.html">订单相关管理</a></li>
+        <li role="separator">
+          <hr>
+        </li>
+        <li role="presentation"><a href="site_house.html">房源信息管理</a></li>
+        <li role="presentation"><a href="site_rechouse.html">房源推荐管理</a></li>
+        <li role="presentation"><a href="site_reccity.html">设置热门城市</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-10">
+      <h2 class="mgr-item-title">订单相关管理</h2>
+      <p>请在下方找到要管理的订单，并点击右面的按钮进行相关管理操作</p>
+
+      <form class="form-inline pull-right mgr-botmar-sm">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control"/>
+            <span class="input-group-addon">
+              <a href="#"><i class="glyphicon glyphicon-search"> <span>搜索</span></i></a>
+            </span>
+          </div>
+        </div>
+      </form>
+
+      <table class="table table-hover">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>房源ID</th>
+          <th>住户昵称</th>
+          <th>房东昵称</th>
+          <th>当前状态</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>abcde</td>
+          <td>defgh</td>
+          <td>
+            <div class="label label-success" role="alert">已完成</div>
+          </td>
+          <td>
+            <button class="btn-link" data-toggle="modal" data-target="#exampleModal">修改订单状态</button>
+            <button class="btn-link" data-toggle="modal" data-target="#makesureModal">删除此订单</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>abcde</td>
+          <td>defgh</td>
+          <td>
+            <span class="label label-success" role="alert">已完成</span>
+          </td>
+          <td>
+            <button class="btn-link" data-toggle="modal" data-target="#exampleModal">修改订单状态</button>
+            <button class="btn-link" data-toggle="modal" data-target="#makesureModal">删除此订单</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>3</td>
+          <td>abcde</td>
+          <td>defgh</td>
+          <td>
+            <div class="label label-danger" role="alert">已拒绝</div>
+          </td>
+          <td>
+            <button class="btn-link" data-toggle="modal" data-target="#exampleModal">修改订单状态</button>
+            <button class="btn-link" data-toggle="modal" data-target="#makesureModal">删除此订单</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>3</td>
+          <td>abcde</td>
+          <td>defgh</td>
+          <td>
+            <div class="label label-warning" role="alert">未处理</div>
+          </td>
+          <td>
+            <button class="btn-link" data-toggle="modal" data-target="#exampleModal">修改订单状态</button>
+            <button class="btn-link" data-toggle="modal" data-target="#makesureModal">删除此订单</button>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>3</td>
+          <td>abcde</td>
+          <td>defgh</td>
+          <td>
+            <div class="label label-info" role="alert">正在进行</div>
+          </td>
+          <td>
+            <button class="btn-link" data-toggle="modal" data-target="#exampleModal">修改订单状态</button>
+            <button class="btn-link" data-toggle="modal" data-target="#makesureModal">删除此订单</button>
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
+
+      <nav class="pull-right">
+        <ul class="pagination">
+          <li class="disabled"><a href="#"><span>&laquo;</span></a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="disabled"><a href="#">...</a></li>
+          <li><a href="#">99</a></li>
+          <li><a href="#"><span>&raquo;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <h4 class="modal-title">修改信息</h4>
+      </div>
+
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="radio">
+            <label>
+              <input type="radio">
+              未处理
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              正在执行
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              已拒绝
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio">
+              已完成
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭，不保存更改</button>
+        <button type="submit" class="btn btn-primary">保存更改</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="makesureModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <h4 class="modal-title">确认吗</h4>
+      </div>
+      <div class="modal-body">
+        真的要删除它吗？
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-danger">确认，并删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <hr class="featurette-divider">
+  <p class="pull-right"><a href="#">返回顶部</a></p>
+  <p>&copy; 2018 霹雳无敌宇宙公司</p>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

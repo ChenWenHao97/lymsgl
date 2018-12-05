@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>旅游民宿管理</title>
+
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/carousel.css" rel="stylesheet">
+  <link href="../css/manager.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--导航栏-->
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">拖动导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">旅游民宿管理</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../zhuhu.html">我是住户</a></li>
+            <li><a href="../fangdong.html">我是房东</a></li>
+            <li class="active"><a href="../manager.html">管理后台</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">我的<span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">我的信息</li>
+                <li><a href="../login.html">登录</a></li>
+                <li><a href="../register.html">注册</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">退出登录</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+<!--占位符-->
+<div class="mgr-spacer"></div>
+
+<div class="container marketing">
+  <ul class="nav nav-tabs mgr-botmar-md">
+    <li role="presentation"><a href="usr_index.html">用户管理</a></li>
+    <li role="presentation"><a href="ord_index.html">订单管理</a></li>
+    <li role="presentation" class="active"><a href="site_index.html">网站管理</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation"><a href="usr_create.html">创建用户</a></li>
+        <li role="presentation"><a href="usr_verify.html">实名认证审批</a></li>
+        <li role="presentation"><a href="usr_list.html">用户资料管理</a></li>
+        <li role="separator">
+          <hr>
+        </li>
+        <li role="presentation"><a href="ord_list.html">订单相关管理</a></li>
+        <li role="separator">
+          <hr>
+        </li>
+        <li role="presentation"><a href="site_house.html">房源信息管理</a></li>
+        <li role="presentation"><a href="site_rechouse.html">房源推荐管理</a></li>
+        <li role="presentation" class="active"><a href="site_reccity.html">设置热门城市</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-10">
+      <h2 class="mgr-item-title">设置热门城市</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538935648968&di=17315a87a71f9f889f58ddfe9625bc16&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa71ea8d3fd1f413407002a5a2f1f95cad1c85eda.jpg">
+            <div class="caption">
+              <h3>成都</h3>
+              <p class="a">
+                <a data-toggle="modal" data-target="#modalEdit" class="btn btn-primary" role="button">修改</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538936910317&di=9f5552b913688dc6aa437a2bb46e9a8a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F011254579708b50000012e7e41f60e.jpg%40900w_1l_2o_100sh.jpg">
+            <div class="caption">
+              <h3>西安</h3>
+              <p class="a">
+                <a data-toggle="modal" data-target="#modalEdit" class="btn btn-primary" role="button">修改</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+                src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538936982944&di=829ebfb95bc2feb1c67d8ad1c9fa7efa&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dpixel_huitu%252C0%252C0%252C294%252C40%2Fsign%3D6bbf297980d4b31ce4319cfbeeae4213%2F09fa513d269759ee1c3f52f1b9fb43166d22df98.jpg">
+            <div class="caption">
+              <h3>上海</h3>
+              <p class="a">
+                <a data-toggle="modal" data-target="#modalEdit" class="btn btn-primary" role="button">修改</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <h4 class="modal-title">修改推荐城市</h4>
+        </div>
+
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="editUsername" class="col-sm-2 control-label">城市名</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="editUsername" placeholder="若不修改，则不填">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="editPhone" class="col-sm-2 control-label">图片URI</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="editPhone" placeholder="若不修改，则不填">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭，不保存更改</button>
+          <button type="button" class="btn btn-primary">保存更改</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <hr class="featurette-divider">
+    <p class="pull-right"><a href="#">返回顶部</a></p>
+    <p>&copy; 2018 霹雳无敌宇宙公司</p>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

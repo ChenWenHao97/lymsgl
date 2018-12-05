@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>旅游民宿管理</title>
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--导航栏-->
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">拖动导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">旅游民宿管理</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">首页</a></li>
+            <li><a href="zhuhu.html">我是住户</a></li>
+            <li><a href="fangdong.html">我是房东</a></li>
+            <li><a href="manager.html">管理后台</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">我的<span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">我的信息</li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">退出登录</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+<!--轮播图-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!--轮播图指示-->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="first-slide" src="https://z1.muscache.cn/pictures/41df549a-66b9-4202-bde0-31941e58c063.jpg" alt="First slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<h1>此处填写标题</h1>-->
+          <!--<p>此处填写内容</p>-->
+          <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">按钮内容</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+    <div class="item">
+      <img class="second-slide" src="https://z1.muscache.cn/pictures/41df549a-66b9-4202-bde0-31941e58c063.jpg" alt="Second slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<h1>此处填写标题</h1>-->
+          <!--<p>此处填写内容</p>-->
+          <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">按钮内容</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+    <div class="item">
+      <img class="third-slide" src="https://z1.muscache.cn/pictures/41df549a-66b9-4202-bde0-31941e58c063.jpg" alt="Third slide">
+      <!--<div class="container">-->
+        <!--<div class="carousel-caption">-->
+          <!--<h1>此处填写标题</h1>-->
+          <!--<p>此处填写内容</p>-->
+          <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">按钮内容</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">前一个</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">后一个</span>
+  </a>
+</div>
+
+
+<!--热门城市推荐-->
+<div class="container marketing">
+
+  <div class="row">
+    <div class="col-lg-4">
+      <img class="img-circle" src="https://z1.muscache.cn/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large"
+           alt="图片占位符" width="140" height="140">
+      <h2>热门城市1</h2>
+      <p>城市介绍1</p>
+      <p><a class="btn btn-default" href="#" role="button">详细信息 &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-4">
+      <img class="img-circle" src="https://z1.muscache.cn/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large"
+           alt="图片占位符" width="140" height="140">
+      <h2>热门城市2</h2>
+      <p>城市介绍2</p>
+      <p><a class="btn btn-default" href="#" role="button">详细信息 &raquo;</a></p>
+    </div>
+
+    <div class="col-lg-4">
+      <img class="img-circle" src="https://z1.muscache.cn/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg?aki_policy=large"
+           alt="图片占位符" width="140" height="140">
+      <h2>热门城市3</h2>
+      <p>城市介绍3</p>
+      <p><a class="btn btn-default" href="#" role="button">详细信息 &raquo;</a></p>
+    </div>
+  </div>
+
+
+  <!-- START THE FEATURETTES -->
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">房源推荐1</h2>
+      <p class="lead">房源介绍1</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive center-block" src="https://z1.muscache.cn/im/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?aki_policy=large"
+           alt="图片占位符">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">房源推荐2</h2>
+      <p class="lead">房源介绍2</p>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" src="https://z1.muscache.cn/im/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?aki_policy=large"
+           alt="图片占位符">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">房源推荐3</h2>
+      <p class="lead">房源介绍3</p>
+    </div>
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive center-block" src="https://z1.muscache.cn/im/pictures/da2d8e97-90b7-409f-94ac-5ab0327c289b.jpg?aki_policy=large"
+           alt="图片占位符">
+    </div>
+  </div>
+
+  <!--分割线-->
+  <hr class="featurette-divider">
+
+  <!--底部信息-->
+  <footer>
+    <p class="pull-right"><a href="#">返回顶部</a></p>
+    <p>&copy; 2018 霹雳无敌宇宙公司</p>
+  </footer>
+</div>
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/holder.min.js"></script>
+
+</body>
+</html>
