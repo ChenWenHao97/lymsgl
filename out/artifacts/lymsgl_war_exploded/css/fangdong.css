@@ -1,0 +1,145 @@
+#navigation {
+  margin-top: 120px;
+  margin-left:12% ;
+  margin-right:12% ;
+}
+/*
+#first-nav {
+	width:20%;
+}*/
+
+/*#real_name,#management_house,#process_orders {
+	width: 100%;
+}*/
+
+/*.a{
+	width: 100%;
+}*/
+
+li {
+  cursor: pointer;
+}
+
+#real_name_next,#management_house_next,#process_orders_next{
+  margin-top:20px ;
+  width:150px;
+}
+
+#management_house_all,#process_orders_all {
+  display: none;
+}
+
+#real_name_next{
+  float: left;
+}
+
+#real_name_all{
+  min-width: 200px;
+}
+
+#real_name_next_form,#management_house_next_form {
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+#real_name_next_form input {
+  width: 400px;
+}
+
+#btn_zhuce {
+  margin-left:40% ;
+  margin-top:20px ;
+}
+
+.title {
+  font-size:30px ;
+  padding-top: 50px;
+  margin-left:200px ;
+}
+
+#management_house_next {
+  float: left;
+}
+
+
+#lab_name,#in_name {
+  display: inline;
+}
+
+#in_name {
+  margin-left:3em ;
+  width: 100%;
+}
+
+#lab_idcard,#in_idcard {
+  display: inline;
+  margin-top:10px ;
+}
+#in_idcard {
+  margin-left:1em ;
+}
+
+.aa {
+  font-size: 25px;
+}
+
+#management_house_next_form {
+  margin-left: 200px;
+}
+
+
+/*#zz {
+	width: 200%;
+}*/
+
+
+#form_add_house {
+  margin-left:30% ;
+  margin-right: 20%;
+}
+
+.ipt {
+  width: 13%;
+}
+
+#del_house_right {
+  display: none;
+}
+
+#tab_del_house {
+  width:60%;
+  margin-left:20%;
+}
+
+.btn_del {
+  height: 29px;
+}
+
+
+#mod_house_right {
+  display: none;
+}
+
+#tab_mod_house {
+  width:60%;
+  margin-left:20%;
+}
+
+.next {
+  margin-left: 100px;
+}
+
+
+#process_orders_next{
+  float: left;
+}
+
+#tab_weichuli,#tab_yichuli {
+  width:60%;
+  margin-left:20%;
+}
+
+#yichuli_right {
+  display: none;
+}
+
